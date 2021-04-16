@@ -14,7 +14,7 @@
     - name: Install Docker py
       command: pip3 install docker-py
     
-    - name: install docker-compose
+    - name: Install Docker-compose
       get_url:
         url:  https://github.com/docker/compose/releases/download/1.26.0/docker-compose-{{ansible_system}}-{{ansible_userspace_architecture}}
         dest: /usr/local/bin/docker-compose
